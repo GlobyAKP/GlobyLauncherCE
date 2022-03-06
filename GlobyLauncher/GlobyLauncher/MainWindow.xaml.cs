@@ -74,6 +74,8 @@ namespace GlobyLauncher
             //Image Changes
             GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/10(Temp).jpg", UriKind.Relative));
             CanvasStack70_.Background = GlobyLBG;
+
+            //Button Changes
         }
         protected void RpgButton(object sender, EventArgs e)
         {
