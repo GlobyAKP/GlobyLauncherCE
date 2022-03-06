@@ -25,11 +25,15 @@ namespace GlobyLauncher
         public SolidColorBrush ButUIGray = (SolidColorBrush)new BrushConverter().ConvertFrom("#333333");
         public SolidColorBrush ButUIDefault = new SolidColorBrush(Colors.PowderBlue);
         private ImageBrush GlobyLBG = new ImageBrush();
+        private ImageBrush GlobyLeftStackBG = new ImageBrush();
         public MainWindow()
         {
             InitializeComponent();
 
             this.Loaded += OnLoadText;
+
+            GlobyLeftStackBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/peakpx.jpg", UriKind.Relative));
+            LeftDivStack.Background = GlobyLeftStackBG;
         }
 
         private void OnLoadText(object sender, EventArgs e) {
@@ -84,6 +88,9 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = false;
             GlobyCEPlayBut.Visibility = Visibility.Collapsed;
+
+            CreditsWrap.IsEnabled = false;
+            CreditsWrap.Visibility = Visibility.Collapsed;
         }
         protected void RpgButton(object sender, EventArgs e)
         {
@@ -113,6 +120,9 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = false;
             GlobyCEPlayBut.Visibility = Visibility.Collapsed;
+
+            CreditsWrap.IsEnabled = false;
+            CreditsWrap.Visibility = Visibility.Collapsed;
         }
         protected void CEButton(object sender, EventArgs e)
         {
@@ -142,6 +152,9 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = true;
             GlobyCEPlayBut.Visibility = Visibility.Visible;
+
+            CreditsWrap.IsEnabled = false;
+            CreditsWrap.Visibility = Visibility.Collapsed;
         }
         protected void InfoButton(object sender, EventArgs e)
         {
@@ -171,6 +184,9 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = false;
             GlobyCEPlayBut.Visibility = Visibility.Collapsed;
+
+            CreditsWrap.IsEnabled = true;
+            CreditsWrap.Visibility = Visibility.Visible;
         }
     }
 }
