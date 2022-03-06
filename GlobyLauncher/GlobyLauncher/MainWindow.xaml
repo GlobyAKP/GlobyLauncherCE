@@ -1,0 +1,31 @@
+﻿<Window x:Class="GlobyLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GlobyLauncher"
+        mc:Ignorable="d"
+        Title="Globy: Launcher" Height="480" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" RenderTransformOrigin="0.5,0.5" Icon="/game33.ico">
+    <Window.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform X="0"/>
+        </TransformGroup>
+    </Window.RenderTransform>
+    <Grid x:Name="DefaultStack" Background="White" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#FFF1F1F1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Button x:Name="Globy1_0View" Content="Globy 1.0(Original)" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Margin="0,30,0,0" Height="50" FontFamily="Segoe UI" Width="230" Click="Globy1_0View_Click"/>
+            <Button x:Name="Globy1_5View" Content="Globy 1.5(RPG Edition)" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Margin="0,52,0,0" Height="50" Width="230" Click="Globy1_5View_Click"/>
+            <Button x:Name="GlobyCEView" Content="Globy:A Keeper's Promise" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Height="50" Margin="0,50,0,0" Width="230" Click="GlobyCEView_Click"/>
+            <Button x:Name="InfoView" Content="Info/Modding" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Height="50" Margin="0,50,0,0" Width="230" Click="InfoView_Click"/>
+        </StackPanel>
+        <StackPanel x:Name="CanvasStack" Grid.Column="1" VerticalAlignment="Stretch"/>
+
+    </Grid>
+</Window>
