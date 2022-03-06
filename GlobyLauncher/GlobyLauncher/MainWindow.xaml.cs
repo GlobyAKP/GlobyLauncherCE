@@ -24,6 +24,7 @@ namespace GlobyLauncher
         public SolidColorBrush ButUIWhite = new SolidColorBrush(Colors.White);
         public SolidColorBrush ButUIGray = (SolidColorBrush)new BrushConverter().ConvertFrom("#333333");
         public SolidColorBrush ButUIDefault = new SolidColorBrush(Colors.PowderBlue);
+        protected ImageBrush GlobyLBG = new ImageBrush();
         public MainWindow()
         {
             InitializeComponent();
