@@ -25,7 +25,7 @@
             <Button x:Name="GlobyCEView" Content="Globy:A Keeper's Promise" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Height="50" Margin="0,50,0,0" Width="230" Click="GlobyCEView_Click"/>
             <Button x:Name="InfoView" Content="Info/Modding" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Height="50" Margin="0,50,0,0" Width="230" Click="InfoView_Click"/>
         </StackPanel>
-        <StackPanel x:Name="CanvasStack" Grid.Column="1" VerticalAlignment="Stretch"/>
+        <StackPanel x:Name="CanvasStack70_" Grid.Column="1" VerticalAlignment="Stretch"/>
 
     </Grid>
 </Window>

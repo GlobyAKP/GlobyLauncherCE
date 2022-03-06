@@ -24,7 +24,7 @@ namespace GlobyLauncher
         public SolidColorBrush ButUIWhite = new SolidColorBrush(Colors.White);
         public SolidColorBrush ButUIGray = (SolidColorBrush)new BrushConverter().ConvertFrom("#333333");
         public SolidColorBrush ButUIDefault = new SolidColorBrush(Colors.PowderBlue);
-        protected ImageBrush GlobyLBG = new ImageBrush();
+        private ImageBrush GlobyLBG = new ImageBrush();
         public MainWindow()
         {
             InitializeComponent();
@@ -70,6 +70,10 @@ namespace GlobyLauncher
 
             InfoView.Background = ButUIWhite;
             InfoView.Foreground = ButUIGray;
+
+            //Image Changes
+            GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/10(Temp).jpg", UriKind.Relative));
+            CanvasStack70_.Background = GlobyLBG;
         }
         protected void RpgButton(object sender, EventArgs e)
         {
@@ -85,6 +89,10 @@ namespace GlobyLauncher
 
             InfoView.Background = ButUIWhite;
             InfoView.Foreground = ButUIGray;
+
+            //Image Changes
+            GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/rpg(temp).jfif", UriKind.Relative));
+            CanvasStack70_.Background = GlobyLBG;
         }
         protected void CEButton(object sender, EventArgs e)
         {
@@ -100,6 +108,10 @@ namespace GlobyLauncher
 
             InfoView.Background = ButUIWhite;
             InfoView.Foreground = ButUIGray;
+
+            //Image Changes
+            GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/CE(temp).jpg", UriKind.Relative));
+            CanvasStack70_.Background = GlobyLBG;
         }
         protected void InfoButton(object sender, EventArgs e)
         {
@@ -115,6 +127,10 @@ namespace GlobyLauncher
 
             InfoView.Background = ButUIDefault;
             InfoView.Foreground = ButUIWhite;
+
+            //Image Changes
+            GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/Blank.png", UriKind.Relative));
+            CanvasStack70_.Background = GlobyLBG;
         }
     }
 }
