@@ -25,7 +25,6 @@ namespace GlobyLauncher
         public SolidColorBrush ButUIGray = (SolidColorBrush)new BrushConverter().ConvertFrom("#333333");
         public SolidColorBrush ButUIDefault = new SolidColorBrush(Colors.PowderBlue);
         private ImageBrush GlobyLBG = new ImageBrush();
-        private ImageBrush GlobyLeftStackBG = new ImageBrush();
         public MainWindow()
         {
             InitializeComponent();
@@ -35,10 +34,6 @@ namespace GlobyLauncher
 
         private void OnLoadText(object sender, EventArgs e) {
             OriginalButton(sender, e);
-
-            GlobyLeftStackBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/LeftStackBG.jpg", UriKind.Relative));
-            LeftCanvasStack.Background = GlobyLeftStackBG;
-
         }
 
         private void Globy1_0View_Click(object sender, RoutedEventArgs e)
@@ -89,9 +84,6 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = false;
             GlobyCEPlayBut.Visibility = Visibility.Collapsed;
-
-            CreditsWrap.IsEnabled = false;
-            CreditsWrap.Visibility = Visibility.Collapsed;
         }
         protected void RpgButton(object sender, EventArgs e)
         {
@@ -121,9 +113,6 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = false;
             GlobyCEPlayBut.Visibility = Visibility.Collapsed;
-
-            CreditsWrap.IsEnabled = false;
-            CreditsWrap.Visibility = Visibility.Collapsed;
         }
         protected void CEButton(object sender, EventArgs e)
         {
@@ -153,9 +142,6 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = true;
             GlobyCEPlayBut.Visibility = Visibility.Visible;
-
-            CreditsWrap.IsEnabled = false;
-            CreditsWrap.Visibility = Visibility.Collapsed;
         }
         protected void InfoButton(object sender, EventArgs e)
         {
@@ -185,9 +171,6 @@ namespace GlobyLauncher
 
             GlobyCEPlayBut.IsEnabled = false;
             GlobyCEPlayBut.Visibility = Visibility.Collapsed;
-
-            CreditsWrap.IsEnabled = true;
-            CreditsWrap.Visibility = Visibility.Visible;
         }
     }
 }

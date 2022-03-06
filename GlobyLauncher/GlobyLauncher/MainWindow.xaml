@@ -19,42 +19,19 @@
             <ColumnDefinition Width="30*"/>
             <ColumnDefinition Width="70*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel x:Name="LeftCanvasStack" Background="#FFF1F1F1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <StackPanel Background="#FFF1F1F1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" d:IsLocked="True">
             <Button x:Name="Globy1_0View" Content="Globy 1.0(Original)" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Margin="0,30,0,0" Height="50" FontFamily="Segoe UI" Width="230" Click="Globy1_0View_Click"/>
             <Button x:Name="Globy1_5View" Content="Globy 1.5(RPG Edition)" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Margin="0,52,0,0" Height="50" Width="230" Click="Globy1_5View_Click"/>
             <Button x:Name="GlobyCEView" Content="Globy:A Keeper's Promise" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Height="50" Margin="0,50,0,0" Width="230" Click="GlobyCEView_Click"/>
             <Button x:Name="InfoView" Content="Info/Modding" Background="White" BorderBrush="White" Foreground="#FF474747" FontSize="20" Height="50" Margin="0,50,0,0" Width="230" Click="InfoView_Click"/>
         </StackPanel>
-        <StackPanel x:Name="CanvasStack70_" Grid.Column="1" VerticalAlignment="Stretch" d:IsLocked="True">
+        <StackPanel x:Name="CanvasStack70_" Grid.Column="1" VerticalAlignment="Stretch">
             <WrapPanel x:Name="PlayButWrap" Height="100" ItemHeight="100" ItemWidth="250" Width="250" HorizontalAlignment="Right" Margin="0,318,25,0" Panel.ZIndex="10" RenderTransformOrigin="0.5,0.5">
                 <Button x:Name="Globy10PlayBut" Content="Play Globy 1.0" Background="#FFFFDE07" FontSize="16" Width="225" Height="50" Panel.ZIndex="3"/>
                 <Button x:Name="Globy15PlayBut" Content="Play Globy 1.5" Background="#FFFFDE07" FontSize="16" Width="225" Height="50" HorizontalContentAlignment="Center" Margin="0,-200,0,0" Panel.ZIndex="2"/>
                 <Button x:Name="GlobyCEPlayBut" Content="Play Globy Community Edition" Background="#FFFFDE07" FontSize="16" Width="225" Height="50" HorizontalContentAlignment="Center" Margin="0,-400,0,0" Panel.ZIndex="1"/>
             </WrapPanel>
-            <WrapPanel x:Name="CreditsWrap" Height="400" Margin="0,-400,0,0">
-                <RichTextBox x:Name="CreditTextTopLine" Width="400" Height="30" Margin="50,50,0,0" IsReadOnly="True" IsUndoEnabled="False" FontSize="16" BorderBrush="White">
-                    <FlowDocument>
-                        <Paragraph>
-                            <Run Text="Development Team: Kartik Vyas"/>
-                        </Paragraph>
-                    </FlowDocument>
-                </RichTextBox>
-                <RichTextBox x:Name="CreditTextMidLine" Width="400" Height="30" Margin="50,10,0,0" IsReadOnly="True" IsUndoEnabled="False" FontSize="16" BorderBrush="White">
-                    <FlowDocument>
-                        <Paragraph>
-                            <Run Text="
-                                Sanchit Srivastva"/>
-                        </Paragraph>
-                    </FlowDocument>
-                </RichTextBox>
-                <RichTextBox x:Name="CreditTextBotLine" Width="400" Height="30" Margin="50,10,0,0" IsReadOnly="True" IsUndoEnabled="False" FontSize="16" BorderBrush="White">
-                    <FlowDocument>
-                        <Paragraph>
-                            <Run Text="                                 Sehaj"/>
-                        </Paragraph>
-                    </FlowDocument>
-                </RichTextBox>
-            </WrapPanel>
+            <WrapPanel x:Name="CreditsWrap" Height="400" Margin="0,-400,0,0"/>
         </StackPanel>
 
     </Grid>
