@@ -76,6 +76,14 @@ namespace GlobyLauncher
             CanvasStack70_.Background = GlobyLBG;
 
             //Button Changes
+            Globy10PlayBut.IsEnabled = true;
+            Globy10PlayBut.Visibility = Visibility.Visible;
+
+            Globy15PlayBut.IsEnabled = false;
+            Globy15PlayBut.Visibility = Visibility.Collapsed;
+
+            GlobyCEPlayBut.IsEnabled = false;
+            GlobyCEPlayBut.Visibility = Visibility.Collapsed;
         }
         protected void RpgButton(object sender, EventArgs e)
         {
@@ -95,6 +103,16 @@ namespace GlobyLauncher
             //Image Changes
             GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/rpg(temp).jfif", UriKind.Relative));
             CanvasStack70_.Background = GlobyLBG;
+
+            //Button Changes
+            Globy10PlayBut.IsEnabled = false;
+            Globy10PlayBut.Visibility = Visibility.Collapsed;
+
+            Globy15PlayBut.IsEnabled = true;
+            Globy15PlayBut.Visibility = Visibility.Visible;
+
+            GlobyCEPlayBut.IsEnabled = false;
+            GlobyCEPlayBut.Visibility = Visibility.Collapsed;
         }
         protected void CEButton(object sender, EventArgs e)
         {
@@ -114,6 +132,16 @@ namespace GlobyLauncher
             //Image Changes
             GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/CE(temp).jpg", UriKind.Relative));
             CanvasStack70_.Background = GlobyLBG;
+
+            //Button Changes
+            Globy10PlayBut.IsEnabled = false;
+            Globy10PlayBut.Visibility = Visibility.Collapsed;
+
+            Globy15PlayBut.IsEnabled = false;
+            Globy15PlayBut.Visibility = Visibility.Collapsed;
+
+            GlobyCEPlayBut.IsEnabled = true;
+            GlobyCEPlayBut.Visibility = Visibility.Visible;
         }
         protected void InfoButton(object sender, EventArgs e)
         {
@@ -133,6 +161,16 @@ namespace GlobyLauncher
             //Image Changes
             GlobyLBG.ImageSource = new BitmapImage(new Uri("/WorkSpace/Globy CE/Launcher/GlobyLauncher/GlobyLauncher/Assets/Blank.png", UriKind.Relative));
             CanvasStack70_.Background = GlobyLBG;
+
+            //Button Changes
+            Globy10PlayBut.IsEnabled = false;
+            Globy10PlayBut.Visibility = Visibility.Collapsed;
+
+            Globy15PlayBut.IsEnabled = false;
+            Globy15PlayBut.Visibility = Visibility.Collapsed;
+
+            GlobyCEPlayBut.IsEnabled = false;
+            GlobyCEPlayBut.Visibility = Visibility.Collapsed;
         }
     }
 }
